@@ -6,8 +6,6 @@ Pokebook is a Windows application for creating personal Pokédex entries — for
 
 <img width="1385" height="860" alt="screenshot" src="https://github.com/user-attachments/assets/b5b91e7b-2852-40ba-810a-07f66ebea4cb" />
 
-> **Note:** Replace the image above with an actual screenshot of the app once you have one. Drop a `screenshot.png` into the `build/` folder, and it will show up here.
-
 ---
 
 ## Download
