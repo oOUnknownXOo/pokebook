@@ -109,8 +109,6 @@ See [**CHANGELOG.md**](CHANGELOG.md) for the full version history with detailed 
 
 ## License
 
-## License
-
 Pokebook is free to download, install, and use for personal purposes. The unmodified installer may be shared with others free of charge. Modification, redistribution for profit, and derivative works are not permitted.
 
 See [LICENSE](LICENSE) for full terms.
