@@ -109,17 +109,13 @@ See [**CHANGELOG.md**](CHANGELOG.md) for the full version history with detailed 
 
 ## License
 
-<!--
-Choose a license that fits your goals. Common options:
+## License
 
-- MIT — permissive, anyone can do anything, no warranty. Good for sharing.
-- GPL-3.0 — derivative works must also be open-source. Good for keeping it free.
-- All rights reserved — no license file. Others can't legally use your code.
+Pokebook is free to download, install, and use for personal purposes. The unmodified installer may be shared with others free of charge. Modification, redistribution for profit, and derivative works are not permitted.
 
-Delete this comment once you've picked, and replace the line below.
--->
+See [LICENSE](LICENSE) for full terms.
 
-_No license specified. All rights reserved._
+© 2026 oOUnknownXOo. All rights reserved.
 
 ---
 
