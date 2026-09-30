@@ -78,20 +78,6 @@ A fallback parser handles looser formats.
 
 Generate a formatted PDF of your entire collection. Each entry shows all its details, and pages break automatically. The exported PDF uses the same format the importer expects, so it doubles as a backup you can re-import elsewhere.
 
-### Persistent local storage
-
-All data is saved to your **Documents** folder:
-
-```
-Documents\Pokebook\
-├── pokebook.db          ← all entry data (JSON)
-└── images\              ← one file per entry image
-    ├── abc123.png
-    └── ...
-```
-
-Every action auto-saves — no "Save" button to remember. Uninstalling Pokebook does not delete your collection. Back up by copying the whole `Documents\Pokebook\` folder.
-
 ### Auto-update system
 
 Pokebook checks for new versions automatically on launch and notifies you in-app when one is available. Downloads and installs happen with two clicks.
@@ -103,71 +89,6 @@ Pokebook checks for new versions automatically on launch and notifies you in-app
 - **OS:** Windows 10 or Windows 11
 - **Disk space:** ~200 MB for the app, plus space for your images
 - **Internet:** Only needed for auto-updates. The app works fully offline.
-
----
-
-## Building from Source
-
-Want to build Pokebook yourself, modify it, or contribute? Here's how.
-
-### Prerequisites
-
-- **Node.js** (LTS version) — [nodejs.org](https://nodejs.org)
-- **Windows Developer Mode** enabled — required for `electron-builder` to extract its tools without admin rights. Enable it in **Settings → Privacy & Security → For developers**.
-
-### Setup
-
-```bash
-git clone https://github.com/oOUnknownXOo/pokebook.git
-cd pokebook
-npm install
-```
-
-### Run in development
-
-```bash
-npm start
-```
-
-Opens the app with hot-reload for testing. Data goes to a `Pokebook/` folder inside the project directory.
-
-### Build the installer
-
-```bash
-npm run build
-```
-
-Produces `dist/PokebookSetup.exe` — the same installer users download.
-
-### Publish a release
-
-Bump the `version` in `package.json`, add an entry to `CHANGELOG.md`, then:
-
-```bash
-set GH_TOKEN=your_github_personal_access_token
-npm run release
-```
-
-This builds the installer and uploads it to GitHub Releases automatically. The token needs `repo` scope.
-
----
-
-## Project Structure
-
-```
-pokebook/
-├── main.js             ← Electron main process (window, file I/O, auto-updater)
-├── preload.js          ← Secure IPC bridge between main and renderer
-├── Pokebook.html       ← App UI markup
-├── style.css           ← App styles
-├── script.js           ← Renderer logic (all app behavior)
-├── package.json        ← Dependencies, build config, publish target
-├── CHANGELOG.md        ← Version history
-├── README.md           ← This file
-└── build/
-    ├── icon.ico        ← App + installer icon
-    └── icon.svg        ← Source icon
-```
 
 ---
 
